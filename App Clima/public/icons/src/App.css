@@ -24,7 +24,7 @@ body {
   background-size: cover; /* Faz com que a imagem de fundo cubra todo o elemento */
   background-position: center; /* Centraliza a imagem de fundo */
   background-repeat: no-repeat; /* Garante que a imagem de fundo não se repita */
-  color: #ffffff; /* Cor do texto padrão */
+  color: #333; /* Cor do texto padrão */
   z-index: 999; /* Define a camada de empilhamento, se necessário */
 }
 

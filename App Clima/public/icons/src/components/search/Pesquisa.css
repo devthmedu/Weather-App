@@ -1,0 +1,16 @@
+/* Container da pesquisa */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+/* Estilo do elemento de pesquisa */
+.search-element {
+  width: 200%;
+  max-width: 500px;
+  border-radius: 15px;
+}
+

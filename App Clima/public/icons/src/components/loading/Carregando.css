@@ -1,0 +1,79 @@
+/* Container do carregamento */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura total da tela */
+  background-color: rgba(0, 0, 0, 0.1); /* Fundo leve para destaque */
+}
+
+/* Animação sk-chase */
+.sk-chase {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  animation: sk-chase 2.5s infinite linear;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  background: #fea528; /* Cor dos pontos */
+  animation: sk-chase-dot 2.0s infinite ease-in-out;
+}
+
+.sk-chase-dot:nth-child(1) {
+  animation-delay: -1.1s;
+}
+
+.sk-chase-dot:nth-child(2) {
+  animation-delay: -1.0s;
+}
+
+.sk-chase-dot:nth-child(3) {
+  animation-delay: -0.9s;
+}
+
+.sk-chase-dot:nth-child(4) {
+  animation-delay: -0.8s;
+}
+
+.sk-chase-dot:nth-child(5) {
+  animation-delay: -0.7s;
+}
+
+.sk-chase-dot:nth-child(6) {
+  animation-delay: -0.6s;
+}
+
+@keyframes sk-chase {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes sk-chase-dot {
+  80%, 100% { transform: scale(0); }
+  0% { transform: scale(1); }
+}
+/* Container do carregamento */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura total da tela */
+  background-color: rgba(0, 0, 0, 0.1); /* Fundo leve para destaque */
+}
+
+/* Estilo do ícone de carregamento */
+.loading-icon {
+  font-size: 2rem; /* Tamanho do ícone */
+  color: #f39c12; /* Cor do ícone */
+  animation: spin 1s infinite linear; /* Animação de rotação */
+}
+
+/* Animação de rotação */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

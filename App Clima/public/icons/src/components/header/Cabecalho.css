@@ -1,0 +1,34 @@
+/* Container do cabeçalho */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  border-radius: 15px;
+  padding: 0 2rem; /* Padding horizontal */
+  
+  
+}
+
+/* Título do cabeçalho */
+.header-title {
+  font-size: 2.5rem;
+  color: #ffffff; /* Branco gelo para o texto */
+  font-weight: 900; /* Fonte mais espessa para impacto */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.537); /* Sombra no texto mais pronunciada para maior destaque */
+  letter-spacing: 3px; 
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+/* Estilo adicional para tornar o cabeçalho mais responsivo */
+@media (max-width: 600px) {
+  .header-container {
+    height: 6rem; /* Ajusta a altura em telas menores */
+    padding: 0 1rem; /* Ajusta o padding horizontal em telas menores */
+  }
+
+  .header-title {
+    font-size: 2rem; /* Reduz o tamanho da fonte em telas menores */
+    letter-spacing: 1px; /* Ajusta o espaçamento entre letras para telas menores */
+  }
+}

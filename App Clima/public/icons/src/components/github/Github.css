@@ -1,0 +1,48 @@
+/* Contêiner do logo do GitHub */
+.github-logo-container {
+  position: fixed; /* Mudança para fixed para manter o logo visível em rolagem */
+  top: 1rem; /* Margem superior ajustada */
+  right: 1rem; /* Margem direita ajustada */
+  z-index: 1000; /* Garante que o logo esteja sobre outros elementos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo do GitHub */
+.github-logo {
+  height: 3rem; /* Ajuste o tamanho do logo */
+  width: 3rem;  /* Ajuste o tamanho do logo */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+  color: black;
+}
+
+/* Efeito de hover para o logo */
+.github-logo:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do logo ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .github-logo {
+    height: 2.5rem; /* Reduz o tamanho do logo para tablets */
+    width: 2.5rem;
+  }
+
+  .github-logo-container {
+    top: 0.5rem; /* Ajusta a margem superior em telas menores */
+    right: 0.5rem; /* Ajusta a margem direita em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .github-logo {
+    height: 2rem; /* Reduz o tamanho do logo para smartphones */
+    width: 2rem;
+  }
+
+  .github-logo-container {
+    top: 0.5rem; /* Margem superior ajustada */
+    right: 0.5rem; /* Margem direita ajustada */
+  }
+}
