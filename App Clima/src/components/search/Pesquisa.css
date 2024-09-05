@@ -1,58 +1,49 @@
-/* Container da pesquisa */
 .search-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem 0;
   color: #fff;
-  padding: 0 1rem; /* Adiciona padding para espaçamento interno */
+  padding: 0 1rem;
 }
 
-/* Estilo do elemento de pesquisa */
 .search-element {
-  width: 100%; /* Ajusta a largura para ocupar todo o espaço disponível */
-  max-width: 500px; /* Limita a largura máxima do elemento */
-  border-radius: 15px; /* Bordas arredondadas */
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
 }
 
-/* Placeholder estilizado */
 .search-element .react-select__placeholder {
-  color: #9e9e9e; /* Cor do placeholder cinza médio */
-  font-size: 20px; /* Tamanho da fonte consistente com o controle */
-  font-weight: 400; /* Peso da fonte padrão */
+  color: #9e9e9e;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-/* Adiciona uma borda e sombra ao elemento de pesquisa para um efeito mais destacado */
 .search-element .react-select__control {
-  border: 1px solid #4a90e2; /* Borda azul clara */
- 
+  border: 1px solid #4a90e2;
 }
 
-/* Ajusta o estilo do menu para garantir que se encaixe bem com o container */
 .search-element .react-select__menu {
-  border-radius: 15px; /* Bordas arredondadas para o menu */
-  
+  border-radius: 15px;
 }
 
-/* Ajusta o estilo da lista de opções para garantir que se encaixe bem com o container */
 .search-element .react-select__menu-list {
-  padding: 0; /* Remove o padding padrão */
-}
-/* Estilo para o valor selecionado */
-.css-e6wtq5-singleValue {
-  color: #e0e0e0; /* Cor do texto do valor selecionado */
-  font-size: 20px; /* Tamanho da fonte consistente com o controle */
-  font-weight: 500; /* Peso da fonte mais destacado para o valor selecionado */
-  padding: 0 10px; /* Padding horizontal para um espaçamento interno */
+  padding: 0;
 }
 
+.css-e6wtq5-singleValue {
+  color: #e0e0e0;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+}
 
 .css-e6wtq5-singleValue .react-select__single-value {
-  display: flex; /* Utiliza flexbox para alinhamento interno */
-  align-items: center; /* Alinha verticalmente os itens */
-  padding: 0 8px; /* Padding para adicionar espaçamento interno */
-  border-radius: 15px; /* Bordas arredondadas para se alinhar com o controle */
-  background-color: #2d2d2d; /* Cor de fundo para o valor selecionado */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil para destaque */
-   color: #e0e0e0; /* Cor do texto do valor selecionado */
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border-radius: 15px;
+  background-color: #2d2d2d;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  color: #e0e0e0;
 }

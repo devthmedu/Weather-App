@@ -1,13 +1,11 @@
-/* Container do carregamento */
 .loader {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Altura total da tela */
-  background-color: rgba(0, 0, 0, 0.1); /* Fundo leve para destaque */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Animação sk-chase */
 .sk-chase {
   width: 40px;
   height: 40px;
@@ -20,7 +18,7 @@
   height: 100%;
   position: absolute;
   border-radius: 50%;
-  background: #fea528; /* Cor dos pontos */
+  background: #fea528;
   animation: sk-chase-dot 2.0s infinite ease-in-out;
 }
 
@@ -56,23 +54,21 @@
   80%, 100% { transform: scale(0); }
   0% { transform: scale(1); }
 }
-/* Container do carregamento */
+
 .loading-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Altura total da tela */
-  background-color: rgba(0, 0, 0, 0.1); /* Fundo leve para destaque */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo do ícone de carregamento */
 .loading-icon {
-  font-size: 2rem; /* Tamanho do ícone */
-  color: #f39c12; /* Cor do ícone */
-  animation: spin 1s infinite linear; /* Animação de rotação */
+  font-size: 2rem;
+  color: #f39c12;
+  animation: spin 1s infinite linear;
 }
 
-/* Animação de rotação */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }

@@ -1,4 +1,3 @@
-/* Reseta estilos padrão */
 *,
 *::before,
 *::after {
@@ -8,114 +7,102 @@
   font-family: inherit;
 }
 
-/* Configurações básicas de fonte e tamanho */
 html {
-  font-size: 16px; /* Tamanho padrão da fonte */
+  font-size: 16px;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center; /* Alinha o conteúdo no centro verticalmente */
-  min-height: 100vh; /* Garante que o corpo cubra a altura da viewport */
+  align-items: center;
+  min-height: 100vh;
   margin: 0;
-  background-image: url('icons/backgrund1.jpg'); /* Ajuste o caminho conforme necessário */
-  background-size: cover; /* Faz com que a imagem de fundo cubra todo o elemento */
-  background-position: center; /* Centraliza a imagem de fundo */
-  background-repeat: no-repeat; /* Garante que a imagem de fundo não se repita */
-  color: #ffffff; /* Cor do texto padrão */
-  z-index: 999; /* Define a camada de empilhamento, se necessário */
+  background-image: url('icons/backgrund1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  z-index: 999;
 }
 
-/* Container principal */
 #root {
   max-width: 960px;
   width: 100%;
   margin: auto;
   padding: 1rem;
-  border: 1px solid #0d2934; /* Borda leve ao redor do container */
-  border-radius: 15px; /* Bordas arredondadas */
-  background-color: #0d2934; /* Fundo branco para contraste */
+  border: 1px solid #0d2934;
+  border-radius: 15px;
+  background-color: #0d2934;
 }
 
-/* Estilo adicional para títulos */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
-  font-weight: 600; /* Peso da fonte para títulos */
-  color: #ffffff; /* Cor dos títulos */
+  font-weight: 600;
+  color: #ffffff;
 }
 
-/* Estilo para parágrafos */
 p {
   margin-bottom: 1rem;
-  line-height: 1.6; /* Melhora a legibilidade dos parágrafos */
+  line-height: 1.6;
 }
 
-/* Estilo para botões */
 button {
   font-family: 'Poppins', sans-serif;
   padding: 0.5rem 1rem;
-  border: 1px solid #2f2f2fdb; /* Borda leve ao redor dos botões */
+  border: 1px solid #2f2f2fdb;
   border-radius: 0.25rem;
-  background-color: #ece3e3; /* Fundo preto para o botão */
-  color: #fff; /* Cor do texto do botão */
+  background-color: #ece3e3;
+  color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #287bff; /* Cor de fundo ao passar o mouse */
-  border-color: #287bff; /* Cor da borda ao passar o mouse */
+  background-color: #287bff;
+  border-color: #287bff;
 }
 
-
-/* Estilo para elementos de carregamento */
 .loading {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.05); /* Fundo leve para destaque do carregamento */
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Estilo para o cabeçalho */
 .header-container {
   text-align: center;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
 
-/* Estilo para previsões */
 .forecast-container {
   margin-top: 2rem;
-  border: 1px solid #ddd; /* Borda leve ao redor do container de previsões */
-  border-radius: 8px; /* Bordas arredondadas */
-  padding: 1rem; /* Espaçamento interno */
-  background-color: #fff; /* Fundo branco para contraste */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
 }
 
-/* Estilo para os itens de previsão diária */
 .daily-item {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #ddd; /* Borda leve entre os itens diários */
-  padding-bottom: 0.5rem; /* Espaçamento abaixo dos itens diários */
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
 }
 
-/* Estilo para os detalhes diários */
 .daily-details-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-/* Estilo para detalhes individuais */
 .daily-details-grid-item {
   display: flex;
   justify-content: space-between;
-  border-radius: 4px; /* Bordas arredondadas */
-  padding: 0.5rem; /* Espaçamento interno */
-  background-color: #f9f9f9; /* Fundo levemente cinza */
+  border-radius: 4px;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
 }
