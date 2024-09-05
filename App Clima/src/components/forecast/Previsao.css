@@ -1,0 +1,204 @@
+/* Container principal da previsão */
+.previsao-container {
+  border-radius: 15px;
+  padding: 1rem; 
+  color: #f5f5f5;  
+  margin: 2rem auto; 
+  max-width: 200%; 
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Título da previsão */
+.titulo {
+  font-size: 1.6rem; /* Aumentei um pouco o tamanho da fonte */
+  font-weight: 600;
+  color: #ffffff; /* Cor branca */
+  margin: 2rem 0; /* Margem top e bottom de 2rem */
+  text-align: center; /* Centraliza o título */
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease; /* Transições para o efeito de hover */
+}
+
+.titulo:hover, .titulo:focus {
+  transform: scale(1.05); /* Efeito de zoom */
+  color: #ffa500; /* Cor laranja para destaque */
+}
+
+/* Estilos para os itens diários no acordeão */
+.item-diario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border: 1px solid #a0a0a0;
+  background-color: #2f2f2fdb; 
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
+}
+
+/* Animação de fade-in e slide-up para os itens diários */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ícone pequeno do clima */
+.icone-pequeno {
+  width: 50px; /* Aumentei o tamanho para melhor visibilidade */
+  height: 50px;
+}
+
+/* Nome do dia da semana */
+.dia {
+  font-size: 1.2rem; /* Aumentei o tamanho da fonte */
+  font-weight: 500;
+  color: #fefefe; /* Cor laranja */
+}
+
+/* Descrição do clima */
+.descricao {
+  font-size: 1rem; /* Aumentei o tamanho da fonte */
+  color: #707070; /* Cor cinza claro */
+}
+
+/* Temperaturas mínima e máxima */
+.min-max {
+  font-size: 1rem; /* Aumentei o tamanho da fonte */
+  color: #fea528; /* Cor vermelha para destacar temperaturas */
+}
+
+/* Estilos para o painel de detalhes */
+.grade-detalhes-diarios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; /* Aumentei o gap para melhor espaçamento */
+  padding: 1rem;
+  background-color: #2f2f2f84; 
+  border: 1px solid #33333300; 
+  margin-top: 1rem; 
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  transition: background-color 0.3s ease; /* Transição para cor de fundo */
+}
+
+.grade-detalhes-diarios:hover {
+  background-color: #2f2f2f90; /* Leve alteração de cor no hover */
+}
+
+/* Detalhes individuais */
+.grade-detalhes-diarios-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem; /* Aumentei o tamanho da fonte */
+  color: #fea528; /* Cor clara para o texto */
+}
+
+.grade-detalhes-diarios-item label:first-child {
+  font-weight: 600;
+  color: #e6e7d9; /* Cor laranja para os rótulos */
+}
+
+.grade-detalhes-diarios-item label:last-child {
+  font-weight: 400;
+}
+
+/* Estilo para o botão do acordeão */
+.react-accessible-accordion__item {
+  border-radius: 8px;
+}
+
+/* Estilo para o botão do acordeão quando está ativo */
+.react-accessible-accordion__item--expanded .react-accessible-accordion__item-button {
+  background-color: #2f2f2fdb; /* Background mais escuro ao expandir */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Ajustes para dispositivos menores, como tablets e smartphones */
+  .previsao-container {
+    padding: 1rem; /* Reduz o padding */
+    margin: 1rem auto; /* Margens reduzidas em telas menores */
+  }
+
+  .titulo {
+    font-size: 1.4rem; /* Ajusta o tamanho da fonte */
+    margin-bottom: 1rem; /* Reduz a margem bottom */
+  }
+
+  .item-diario {
+    flex-direction: column; /* Empilha os itens verticalmente em telas menores */
+    align-items: flex-start;
+    padding: 0.8rem; /* Reduz o padding */
+  }
+
+  .icone-pequeno {
+    width: 40px; /* Reduz o tamanho do ícone */
+    height: 40px;
+  }
+
+  .dia {
+    font-size: 1.1rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .descricao, .min-max {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .grade-detalhes-diarios {
+    grid-template-columns: 1fr; /* Exibe os detalhes em uma única coluna */
+  }
+
+  .grade-detalhes-diarios-item {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para smartphones menores */
+  .previsao-container {
+    padding: 0.8rem; /* Reduz ainda mais o padding */
+    margin: 0.5rem auto; /* Margens menores */
+  }
+
+  .titulo {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    margin-bottom: 0.8rem; /* Margem bottom reduzida */
+  }
+
+  .item-diario {
+    padding: 0.5rem; /* Reduz o padding */
+  }
+
+  .icone-pequeno {
+    width: 30px; /* Reduz o tamanho do ícone */
+    height: 30px;
+  }
+
+  .dia {
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .descricao, .min-max {
+    font-size: 0.8rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .grade-detalhes-diarios {
+    grid-template-columns: 1fr; /* Mantém uma coluna em telas muito pequenas */
+  }
+
+  .grade-detalhes-diarios-item {
+    font-size: 0.8rem; /* Ajusta o tamanho da fonte */
+  }
+}

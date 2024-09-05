@@ -1,0 +1,221 @@
+/* Container principal para o clima atual */
+.weather-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+  border-radius: 15px;
+  padding: 1rem; /* Aumentei o padding para mais espaçamento interno */
+  margin: 5rem auto; /* Margem top e bottom e centralização */
+  background-color: #2f2f2fdb; /* Cor de fundo escura */
+  color: #f5f5f5; /* Cor de texto clara */
+  max-width: 90%; /* Ajusta a largura máxima para melhor responsividade */
+}
+
+/* Título do clima atual */
+.weather-title {
+  font-weight: 600;
+  font-size: 1.6rem; /* Aumentei o tamanho da fonte */
+  color: #ffffff; /* Cor laranja */
+  margin: 1rem 0; /* Margem top e bottom de 1rem */
+  text-align: center; /* Centraliza o título */
+}
+
+/* Container para as informações do clima atual */
+.current-weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Espaçamento entre os itens */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Status do clima atual */
+.current-weather-status {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  max-width: 300px; /* Largura máxima ajustada */
+}
+
+/* Nome da cidade */
+.city {
+  font-weight: 700;
+  font-size: 1.6rem; /* Aumentei o tamanho da fonte */
+  color: #1124fc; /* Cor laranja */
+  margin-bottom: 0.5rem; /* Espaço abaixo do nome da cidade */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Temperatura atual */
+.temperature {
+  font-weight: 300;
+  font-size: 6rem; /* Aumentei o tamanho da fonte */
+  color: #c3c6c7; /* Cor vermelha para a temperatura */
+  line-height: 1;
+  text-align: center; /* Centraliza a temperatura */
+}
+
+/* Informações adicionais sobre o clima */
+.current-weather-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+/* Contêiner para ícone e descrição do clima */
+.icon-temp-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espaço aumentado entre o ícone e a temperatura */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Ícone do clima */
+.weather-icon {
+  width: 120px; /* Aumentei o tamanho do ícone */
+  height: 120px;
+}
+
+/* Descrição do clima */
+.weather-description {
+  font-size: 1.4rem; /* Aumentei o tamanho da fonte */
+  color: #ffffff; /* Cor branca */
+  font-weight: 600;
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Sensação térmica */
+.feels_like {
+  font-size: 1.2rem; /* Aumentei o tamanho da fonte */
+  color: #bdc3c7; /* Cor cinza claro */
+  margin-bottom: 1rem; /* Espaço abaixo da sensação térmica */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Contêiner para temperaturas máxima e mínima */
+.high-low-container {
+  display: flex;
+  gap: 1rem; 
+  margin-bottom: 1rem;
+  justify-content: center; 
+}
+
+/* Grau de temperatura */
+.weather-degree {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.2rem; 
+  color: #10639a; /* Cor azul */
+}
+
+/* Linha de informação */
+.info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem; /* Espaço abaixo de cada linha de informação */
+}
+
+/* Ícone de informação */
+.info-icon {
+  margin-right: 0.8rem;
+  width: 1.6rem; /* Aumentei o tamanho do ícone */
+  color: #fea528; /* Cor laranja para os ícones */
+}
+
+/* Valor do parâmetro */
+.parameter-value {
+  color: #f5f5f5; 
+  font-weight: 500;
+}
+
+/* Contêiner de ícone e texto */
+.info-icon-container {
+  display: flex;
+  align-items: center;
+  font-size: 1rem; /* Ajustei o tamanho da fonte */
+  color: #bdc3c7; /* Cor cinza claro para o texto */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Ajustes para dispositivos menores, como tablets e smartphones */
+  .weather-container {
+    padding: 1rem; /* Reduz o padding */
+    margin: 1rem auto; /* Margens reduzidas em telas menores */
+  }
+
+  .weather-title {
+    font-size: 1.4rem; /* Ajusta o tamanho da fonte */
+    margin-bottom: 1rem; /* Ajusta a margem bottom */
+  }
+
+  .city {
+    font-size: 1.4rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .temperature {
+    font-size: 4rem; /* Reduz o tamanho da fonte */
+  }
+
+  .weather-icon {
+    width: 80px; /* Reduz o tamanho do ícone */
+    height: 80px;
+  }
+
+  .weather-description {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .feels_like {
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .high-low-container {
+    gap: 0.8rem; /* Ajusta o gap */
+  }
+
+  .weather-degree {
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para smartphones menores */
+  .weather-container {
+    padding: 0.8rem; /* Reduz ainda mais o padding */
+    margin: 0.5rem auto; /* Margens ainda menores */
+  }
+
+  .weather-title {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    margin-bottom: 0.8rem; /* Ajusta a margem bottom */
+  }
+
+  .city {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .temperature {
+    font-size: 3rem; /* Reduz o tamanho da fonte */
+  }
+
+  .weather-icon {
+    width: 60px; /* Reduz o tamanho do ícone */
+    height: 60px;
+  }
+
+  .weather-description {
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .feels_like {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .high-low-container {
+    gap: 0.6rem; /* Ajusta o gap */
+  }
+
+  .weather-degree {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+  }
+}
